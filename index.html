@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pyetro Vilamil — Links</title>
+
+  <!-- CSS (aba CSS embutida) -->
+  <style>
+    :root{
+      --bg: linear-gradient(135deg,#f6f8ff 0%, #eef7f9 100%);
+      --card:#ffffff;
+      --accent1:#6c63ff;
+      --accent2:#00c2a8;
+      --muted:#6b7280;
+      --radius:18px;
+      --glass: rgba(255,255,255,0.6);
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background:var(--bg);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:32px;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+
+    /* Container central */
+    .wrap{
+      width:100%;
+      max-width:420px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0.95));
+      border-radius: calc(var(--radius) + 6px);
+      box-shadow: 0 10px 30px rgba(42, 55, 90, 0.12);
+      padding:28px;
+      border: 1px solid rgba(107,114,128,0.06);
+    }
+
+    /* Profile area */
+    .profile{
+      text-align:center;
+      margin-bottom:18px;
+    }
+
+    .photo-frame{
+      width:132px;
+      height:132px;
+      margin:0 auto 14px auto;
+      border-radius:50%;
+      overflow:hidden;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      background: linear-gradient(135deg,var(--accent1),var(--accent2));
+      padding:6px;
+      box-shadow: 0 8px 20px rgba(108,99,255,0.18);
+      border: 4px solid rgba(255,255,255,0.6);
+    }
+
+    .photo{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      display:block;
+      border-radius:50%;
+      background: linear-gradient(180deg, #eee, #ddd);
+    }
+
+    h1{
+      margin:6px 0 2px 0;
+      font-size:20px;
+      letter-spacing:0.2px;
+    }
+
+    p.handle{
+      margin:0;
+      color:var(--muted);
+      font-size:13px;
+    }
+
+    /* Buttons area */
+    .links{
+      display:flex;
+      flex-direction:column;
+      gap:12px;
+      margin-top:18px;
+    }
+
+    .link-btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      padding:14px 16px;
+      border-radius:12px;
+      font-weight:600;
+      text-decoration:none;
+      color:white;
+      border: none;
+      cursor:pointer;
+      transition:transform .12s ease, box-shadow .12s ease;
+      box-shadow: 0 6px 18px rgba(16,24,40,0.06);
+    }
+
+    .link-btn:active{transform:translateY(1px)}
+    .link-btn:focus{outline:3px solid rgba(99,102,241,0.14)}
+
+    .instagram{
+      background: linear-gradient(90deg,#833ab4,#fd1d1d,#fcb045);
+    }
+
+    .whatsapp{
+      background: linear-gradient(90deg,#25D366,#00a884);
+    }
+
+    .secondary{
+      background: transparent;
+      color:var(--muted);
+      border:1px solid rgba(15,23,42,0.06);
+      box-shadow:none;
+    }
+
+    /* Card with rounded borders for content (subtle) */
+    .content-card{
+      padding:18px;
+      border-radius:12px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.35), rgba(255,255,255,0.12));
+      border: 1px solid rgba(17,24,39,0.03);
+    }
+
+    /* small helper text */
+    .small{
+      text-align:center;
+      margin-top:14px;
+      font-size:12px;
+      color:var(--muted);
+    }
+
+    /* Responsive */
+    @media (max-width:420px){
+      .photo-frame{width:110px;height:110px}
+      .wrap{padding:20px}
+    }
+
+    /* File input styled (oculto) */
+    #imgInput{display:none}
+    .edit-photo{
+      margin-top:10px;
+      display:inline-block;
+      font-size:12px;
+      padding:8px 10px;
+      border-radius:10px;
+      background:rgba(255,255,255,0.9);
+      border:1px solid rgba(15,23,42,0.04);
+      color:var(--muted);
+      cursor:pointer;
+    }
+
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <div class="content-card">
+      <div class="profile">
+        <!-- Foto atualizada com o link fornecido -->
+        <label class="photo-frame" for="imgInput" title="Clique para trocar a foto localmente">
+          <img id="profileImg" class="photo" src="https://instagram.ffln2-3.fna.fbcdn.net/v/t51.2885-19/425151235_210096825464763_8051404874970994599_n.jpg?stp=dst-jpg_s150x150_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby42NzMuYzIifQ&_nc_ht=instagram.ffln2-3.fna.fbcdn.net&_nc_cat=103&_nc_oc=Q6cZ2QGqrHjXuPHU-Df5zCV3TfGjFjmV4XpspkHm8apJT00tq3k23NR5mrYnwO0WQiCYa1QlduNGR017BFeuwuqjZXcZ&_nc_ohc=KLInxqVPohYQ7kNvwHqCyw5&_nc_gid=I7-dv-uIVrZ-RIXJ531_AQ&edm=AP4sbd4BAAAA&ccb=7-5&oh=00_Afayz2ND-7Fd57mh4W7IUxTTo3rgSnLS-29J5qE3kjcLvg&oe=68BEA24E&_nc_sid=7a9f4b" alt="Foto de Pyetro Vilamil" />
+        </label>
+
+        <input id="imgInput" type="file" accept="image/*" />
+
+        <h1>Pyetro Vilamil</h1>
+        <p class="handle">@pyetro.cruz_</p>
+      </div>
+
+      <div class="links">
+        <a class="link-btn instagram" href="https://instagram.com/pyetro.cruz_" target="_blank" rel="noopener noreferrer">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden>
+            <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5z" stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M16 11.37a4 4 0 1 1-4.63-4" stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M17.5 6.5h.01" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          Ir para Instagram
+        </a>
+
+        <a class="link-btn whatsapp" href="https://wa.me/55489155103" target="_blank" rel="noopener noreferrer">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden>
+            <path d="M21 12.04A8.94 8.94 0 0 1 12.05 21 9 9 0 0 1 3 12.05C3 7.01 7.02 3 12.05 3c2.39 0 4.58.93 6.21 2.45" stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M21 21l-3.5-1.5" stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          Abrir no WhatsApp
+        </a>
+
+        <a class="link-btn secondary" href="#" onclick="alert('Coloque aqui outro link ou remova este botão.')">
+          Mais informações
+        </a>
+      </div>
+
+      <p class="small">Toque na foto para trocar localmente (não faz upload). Substitua a URL final se desejar.</p>
+    </div>
+  </main>
+
+  <script>
+    const input = document.getElementById('imgInput');
+    const img = document.getElementById('profileImg');
+    input.addEventListener('change', e => {
+      const file = e.target.files && e.target.files[0];
+      if (!file) return;
+      const url = URL.createObjectURL(file);
+      img.src = url;
+    });
+  </script>
+</body>
+</html>
